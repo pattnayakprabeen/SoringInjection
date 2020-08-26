@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+<bean id="dt" class="java.util.Date"/>
+<bean id="dt1" class="java.util.Date">
+<property name="year" value="110"/>
+<property name="month" value="10"/>
+<property name="date" value="20"/>
+</bean>
+<bean id="wsg" class="com.prabeen.beans.WishMessageGenerator">
+<property name="date1" ref="dt"/>
+<constructor-arg name="dat" ref="dt1"/>
+</bean>
+
+</beans>
