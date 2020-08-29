@@ -3,6 +3,7 @@ package com.prabeen.beans;
 import java.util.Date;
 
 public class WishMessageGenerator {
+         private int i=10;
 	private Date date;
    static {
 	   
